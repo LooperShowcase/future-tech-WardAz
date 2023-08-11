@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> </title>
+    <script src="script.js"></script>
+  </head>
+
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <button onclick="speak()">allow audio</button>
+    <div class="container">
+      <center>
+        <form
+          onsubmit="event.preventDefault();
+        conversationUSERAdd(document.getElementById('input-text').value);
+        open_ai();
+        document.getElementById('input-text').value='';
+        "
+        >
+          <h1>voice assisant by ward</h1>
+          <input type="text" id="input-text" placeholder="type here!" />
+          <button id="submit-button">submit</button>
+        </form>
+      </center>
+
+      <div id="chat-container"></div>
+    </div>
+    <img
+      src="https://www.europarl.europa.eu/resources/library/images/20230607PHT95601/20230607PHT95601_original.jpg"
+      width="360"
+    />
+  </body>
+</html>
